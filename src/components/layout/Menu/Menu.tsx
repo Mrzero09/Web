@@ -35,6 +35,9 @@ const Menu = (): React.ReactElement => {
         <div className={pathname.includes('/students') ? styles.linkActive : ''}>
           <Link href="/students" onClick={toggleMenu}>Студенты</Link>
         </div>
+        <div className={pathname.includes('/log') ? styles.linkActive : ''}>
+          <Link href="/log" onClick={toggleMenu}>Лог</Link>
+        </div>
       </nav>
     </div>
   );
